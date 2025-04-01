@@ -1,0 +1,159 @@
+.body{
+    background-color:f3f3e9;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(195, 243, 227);
+    
+}
+
+.logo{
+    height: 90px;
+    width:90px;
+}
+.nav-items >ul{
+    display: flex;
+
+}
+.nav-items >ul >li{
+    padding: 10px;
+    margin: 10px;
+    font-size: larger;
+    margin-left: 120px;
+
+}
+.log-btn{
+    margin-top: 14px;
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+
+}
+.res-card{
+   width: 200px; 
+   height: 260px;
+   /* border: 1px solid black; */
+   padding: 5px;
+   /* border-radius: 5px; */
+   margin: 8px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   
+}
+.res-card >h5{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2px;
+   
+
+}
+
+.search{
+    padding: 10px;
+
+}
+.food-image{
+    height: 150px;
+    width: 100%;
+    
+}
+.rest-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.filter-btn{
+  margin-top: 20px;  
+  margin-left: 10px;
+  color: black;background-color: #FFA500;
+  font-size: larger;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  height: 30px;
+ 
+}
+.filter-btn:hover{
+    background-color:#D84315 ;
+    transform: scale(1.005);
+    transition: transform 0.3s ease,
+}
+.res-card{
+    background-color: #ece9e8;
+}
+.res-card {
+    width: 200px; 
+    height: 275px;
+    border: .5px solid rgb(250, 246, 246);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+ }
+ .res-card >h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+ }
+ 
+ .res-card:hover {
+    cursor: pointer;
+    background-color: white;
+    transform: scale(1.05);
+    border: 1px solid rgb(163, 159, 159);
+ }
+ .search-box{
+    height: 28px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    border-radius: 5px;
+   
+
+ }
+ .search-btn{
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #3e96ee;
+  font-weight: bold;
+ }
+ .filter{
+    display: flex;
+ }
+ .shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .shimmer-Card{
+    width: 200px; 
+    height: 275px;
+   /* border: 1px solid black; */
+   padding: 5px;
+   /* border-radius: 5px; */
+   margin: 8px;
+   background-color:rgb(238, 234, 234);
+   
+ }
+ /* General Page Styling */
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+/* Header Styling */
