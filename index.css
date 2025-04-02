@@ -6,13 +6,20 @@
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: rgb(195, 243, 227);
+    /* background-color: rgb(195, 243, 227); */
+    background-image: linear-gradient(135deg,#b2ebe9 0%,#aee2f7 31%,#dfceef 100%);
+    padding-top: 10px;
+    width: auto;
+    font-family: inherit;
+    font-size: 17px;
     
 }
 
 .logo{
     height: 90px;
     width:90px;
+    border-radius: 50px;
+    margin-left: 5px;
 }
 .nav-items >ul{
     display: flex;
@@ -27,16 +34,38 @@
 }
 .log-btn{
     margin-top: 14px;
-    height: 30px;
+    height: 40px;
     width: 100px;
     margin-right: 10px;
-    border-radius: 5px;
-    background-color: blueviolet;
     cursor: pointer;
-    font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(135deg,#3ab5b0 0%,#3d99be 31%,#56317a 100%);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.4em 1.5em;
+    transition: scale 0.2s;
 
+}
+.log-btn:hover{
+  cursor: pointer;
+  -webkit-animation: pulse 1.5s infinite;
+  animation: pulse512 1.5s infinite;
+}
+.button:active{
+  scale: 0.95;
+}
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(2128,03,8,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(2128,03,8,0);
+  }
 }
 .res-card{
    width: 200px; 
@@ -54,7 +83,6 @@
     margin-bottom: 0px;
     padding: 2px;
    
-
 }
 
 .search{
@@ -72,22 +100,67 @@
     
     
 }
-.filter-btn{
-  margin-top: 20px;  
+
+.search-btn {
+  margin-top: 14px;
+  height: 40px;
+  width: 100px;
   margin-left: 10px;
-  color: black;background-color: #FFA500;
-  font-size: larger;
-  border-radius: 5px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: 10px;
   cursor: pointer;
-  height: 30px;
- 
-}
-.filter-btn:hover{
-    background-color:#D84315 ;
-    transform: scale(1.005);
-    transition: transform 0.3s ease,
-}
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(135deg,#3ab5b0 0%,#3d99be 31%,#56317a 100%);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1em;
+  transition: scale 0.2s;
+  
+  }
+  .search-btn:hover{
+    cursor: pointer;
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse512 1.5s infinite;
+  }
+  .button:active{
+    scale: 0.95;
+  }
+  @keyframes pulse512 {
+    0% {
+      box-shadow: 0 0 0 0 #05bada66;
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(2128,03,8,0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(2128,03,8,0);
+    }
+  }
+  .filter-btn{
+  margin-top: 24px;
+  height: 40px;
+  width: 300px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(135deg,#3ab5b0 0%,#3d99be 31%,#56317a 100%);
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.4em 1.5em;
+  transition: scale 0.2s;
+
+  }
+  .filter-btn:hover{
+    cursor: pointer;
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse512 1.5s infinite;
+  }
+  
+  
+  
 .res-card{
     background-color: #ece9e8;
 }
@@ -113,23 +186,24 @@
     border: 1px solid rgb(163, 159, 159);
  }
  .search-box{
-    height: 28px;
+    height: 35px;
     margin-top: 5px;
     margin-left: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     border-radius: 5px;
-   
+    outline: none;
+    border: none;
+    box-shadow: 0px 10px 20px -18px;
+    color: #242424;
+ }
+ .search-box:focus{
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
 
  }
- .search-btn{
-  height: 30px;
-  margin-left: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #3e96ee;
-  font-weight: bold;
+ .search-box{
+  outline: 1px solid lightgray;
  }
  .filter{
     display: flex;
@@ -156,4 +230,8 @@
     padding: 0;
     font-family: 'Arial', sans-serif;
 }
-/* Header Styling */
+.info-det{
+  font-family: cursive;
+  font-weight: 100;
+  
+}

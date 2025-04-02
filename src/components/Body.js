@@ -50,7 +50,7 @@ const Body = () => {
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
-            className="search-btn"
+            className="button"
             onClick={() => {
               if (!searchText.trim()) {
                 setFilteredRestaurants(restaurants);
